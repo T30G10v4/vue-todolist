@@ -37,9 +37,15 @@
       <div class="form-task col-xs-six col-xs-offset-three">
         <label for="task">
 
-          <input type="text">
+          <input 
+            type="text"
+            v-model="singleTask.name"
+          >
         </label>
-        <button>Submit task</button>
+        <button
+          @click="addNewTask()"
+        >
+        Submit task</button>
 
       </div>
       <div class="task-list col-xs-six col-xs-offset-three">

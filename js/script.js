@@ -6,6 +6,13 @@ createApp ({
 
         return {
             
+            singleTask: {
+
+                name: "",
+                isDone: false
+
+            },
+            
             tasks: [ 
                 {
                     name: "Task One",
@@ -45,9 +52,13 @@ createApp ({
 
             this.tasks[index].isDone = !this.tasks[index].isDone;
 
-        }
+        },
 
-        
+        addNewTask: function() {
+
+            this.tasks.push({...this.singleTask});
+
+        } 
 
     }
 
