@@ -81,6 +81,12 @@ main li {
 
 }
 
+main li span {
+
+    cursor: pointer;
+
+}
+
 main .is-done {
 
     text-decoration: line-through;

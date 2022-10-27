@@ -44,6 +44,7 @@
         </label>
         <button
           @click="addNewTask()"
+          @keyup.leave="addNewTask()"
         >
         Submit task</button>
 
@@ -51,10 +52,7 @@
       <div class="task-list col-xs-six col-xs-offset-three">
 
         <ul>
-          <!-- <li>Task1</li>
-          <li>Task1</li>
-          <li>Task1</li>
-          <li>Task1</li> -->
+          
           <li 
             v-for="(task, index) in tasks" 
             class="flex-row-spc-btwn-center"

@@ -57,6 +57,7 @@ createApp ({
         addNewTask: function() {
 
             this.tasks.push({...this.singleTask});
+            this.singleTask.name = "";
 
         } 
 
