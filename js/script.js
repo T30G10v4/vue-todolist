@@ -15,25 +15,49 @@ createApp ({
             
             tasks: [ 
                 {
-                    name: "Task One",
+                    name: "Alzarmi dal letto",
                     isDone: false
                 },
 
                 {
-                    name: "Task Two",
-                    isDone: true
-                },
-
-                {
-                    name: "Task Three",
+                    name: "Fare colazione",
                     isDone: false
                 },
 
                 {
-                    name: "Task Four",
-                    isDone: true
-                }
+                    name: "Accendere il computer",
+                    isDone: false
+                },
 
+                {
+                    name: "Collegarmi a Zoom",
+                    isDone: false
+                },
+
+                {
+                    name: "Ascoltare la lezione",
+                    isDone: false
+                },
+
+                {
+                    name: "Pranzare",
+                    isDone: false
+                },
+
+                {
+                    name: "Fare l'esercizio",
+                    isDone: false
+                },
+
+                {
+                    name: "Pushare la repo",
+                    isDone: false
+                },
+
+                {
+                    name: "FINITO!!!",
+                    isDone: false
+                },
 
             ]
             
