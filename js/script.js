@@ -35,11 +35,19 @@ createApp ({
 
     methods : {
 
-        pariDispari : function() {
+        removeTaskFromTasks : function(index) {
 
-         
+            this.tasks.splice(index, 1);
+
+        },
+
+        changeDoneStatus : function(index) {
+
+            this.tasks[index].isDone = !this.tasks[index].isDone;
 
         }
+
+        
 
     }
 

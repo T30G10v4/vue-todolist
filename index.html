@@ -50,11 +50,12 @@
           <li>Task1</li>
           <li>Task1</li> -->
           <li 
-            v-for="task in tasks" 
-            class="is-done"
-            
+            v-for="(task, index) in tasks" 
+            class="flex-row-spc-btwn-center"
+            :class="task.isDone ? 'is-done' : ''"
           >
-            {{task.name}}
+            <span @click="changeDoneStatus(index)">{{task.name}}</span>
+            <span @click="removeTaskFromTasks(index)">&cross;</span>
           </li>
         </ul>
         
